@@ -1,0 +1,176 @@
+@elastic-list-border: 1px solid grey;
+@spacing-texts: 4px 0 0 5px;
+@font: "Arial";
+@color-selected-item: #00ccff;
+@border-dotted: 1px dotted black;
+
+body {
+	background-color: ghostwhite;
+	padding-bottom: 40px;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+#mytooltip {
+  border: 1px solid #e0e0e0;
+  padding: 5px 4px;
+  background-color: "#3d424f";
+  color: white;
+  position: absolute;
+  font-family: @font;
+  font-size: 10px;
+  max-width: 175px;
+}
+
+.elastic-list {
+	margin-top: 25px;
+	padding: 2px;
+	background: #f0;
+  	font-family: @font;
+  	font-size: 12px;
+  	-webkit-box-sizing: content-box;
+  	-moz-box-sizing: content-box;
+  	box-sizing: content-box;
+
+	
+}
+
+.elastic-list-dimension-header {
+	font-size: 12px;
+	font-weight: bold;
+	float: left;
+	border: 1px solid white;
+  	color: #f0f0f0;
+  	background-color: #333333;
+  	padding: @spacing-texts;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.elastic-list-dimension {
+	//position: relative;
+	float: left;
+	border: none; //1px solid black;
+	overflow-y: auto;
+  	overflow-x: hidden;
+  	color: #444444;
+}
+
+.elastic-list-dimension-item {
+	position: relative;
+	border: 1px solid white;
+	background-color: #a5a5a5;
+	font-size: 11px;
+	font-family: @font;	
+	p {
+		margin: @spacing-texts;
+		float:left;
+		display: inline;
+		&.key {
+			width: 70%
+		}
+		&.value {
+			float: right;
+			margin-right: 22px;
+		}
+	}		
+}
+
+.elastic-list-dimension-item-hover {
+	background-color: lightgrey;
+	p {
+		font-weight: bold;
+	}
+}
+
+#filtering {
+	border-top: @border-dotted;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 25px;
+	height: 50px;
+
+	.elastic-list-filters {
+		padding-top: 5px;
+		font-weight: bold;
+		margin: 0;
+		height: 25px;
+		color: #222222;
+		p {
+			margin: 0;
+		}
+		span {
+			color: @color-selected-item;
+		}
+	}
+}
+.filter {
+	background-color: @color-selected-item;
+}
+
+.filter-item {
+	float:left;
+}
+
+.results-title {
+	font-family: @font;
+	font-weight: bold;
+	margin: 0;
+	font-size: 12px;
+}
+
+#results {
+	font-family: @font;
+	font-size: 11px;
+	height: 200px;
+	overflow-y: auto;
+	border-top: 1px solid #909090;
+	background-color: #f0f0f0;
+	padding: 0 5px;
+	p {
+		border-bottom: 1px solid white;
+	}
+}
+
+.price-motivation {
+	font-style: italic;
+	color: grey;
+}
+
+
+.post-info-social {
+	ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+	span.links {
+		margin-right: 30px;
+	}
+	
+	li {
+		float: left;
+		width: 16px;
+		height: 36px;
+		padding-left: 3px;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+		outline-style: none;
+		font-weight: bold;
+	}
+
+	img {
+		float: left;
+		margin: 10px 24px 20px 0;
+	}
+}
+
+.github {
+	margin-right: 35px;
+}
