@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<meta name="keywords" content="CRES">
+	<meta name="description" content="Elastic List with d3.js">
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<title>UBC Collaborative Research Excellence Search</title>
+	<!-- <link href="minimal-clf-7.0.4.css" rel="stylesheet">
+	<link rel="stylesheet" href="unit.css"> -->
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<img src="img/download.png" style="max-width: 100%;">
+
+	</div>
+	<div class="container">
+		<h2>Collaborative Research Excellence Search
+		</h2>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>
+					<p class="lead" style="font-size:23px">Elastic list facet search of funded collaborative initiatives
+						(CFI, CFREF, GCRC, GREX, NFRF, NSERC CREATE)
+					</p>
+				</h2>
+			</div>
+		</div>
+
+		<div id="elastic-list"></div>
+		<div id="filtering"></div>
+		<!-- <p id="filtering-text">(Instruction: Use shortcut search [Command/CTRL+F] to scan for
+			keywords.)</p> -->
+		<p id="results-count" class="results-title">Results:</p>
+		<div id="results"></div>
+		<div id="mytooltip"></div>
+	</div>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="elastic-list-real.js"></script>
+
+</html>
